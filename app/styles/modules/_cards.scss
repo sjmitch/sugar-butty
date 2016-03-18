@@ -1,0 +1,35 @@
+/*
+ * MODULES/CARDS scss stylesheet
+ * stephen@sugarbutty.com
+ * created March 2016
+ */
+
+
+/* CARDS styles 
+   ========================================================================== */
+
+
+.cards {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 auto;
+    padding: 0;
+    justify-content: center;
+    position: relative;
+	max-width: 300px;
+	@media screen and (orientation: landscape) {
+		margin: auto;
+		padding-bottom: 0;
+	}
+	.card {	
+		display: block;
+		line-height: 200%;
+    	margin: 5% auto;
+		.cardlink {
+			padding: $pad10;
+			box-shadow: 0 2px 5px rgba(0,0,0,0.26);
+			border-radius: 20px;
+			text-decoration: none;
+		}
+	}
+}

@@ -1,0 +1,124 @@
+/*
+ * STRUCTURE scss stylesheet
+ * stephen@sugarbutty.com
+ * created February 2016
+ */
+
+$fontsize: 10px;
+
+html {
+	height: 100%;
+}
+
+body {
+	background: $white;
+	height: 100%;
+	margin: 0;
+	position: relative;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  box-sizing: border-box;
+}
+
+/*  PAGE STRUCTURE
+
+	body
+	-- page
+		-- header
+		-- main
+			-- content
+			-- sidebar
+		-- footer
+
+*/
+
+$heaaderheight: 80px;
+$footerheight: 50px;
+$pad: $fontsize / 10;
+$pad5: $fontsize / 2;
+$pad10: $fontsize;
+
+/*
+ * basic  structure 
+*/
+
+.page {
+	display: flex;
+	flex-direction: column;
+	font-size: 100%;
+	background: inherit;
+	position: relative;
+	font-size: 100%;
+	min-height: 100%;
+
+	.container {
+		display: flex;
+		position: relative;
+	}
+	
+	.header-container {
+
+	}
+	
+	.hero-wrap {
+
+	}
+	
+	.content-container {
+
+	}	
+	
+	.footer-container {
+
+	}	
+}
+
+
+
+
+
+		.page-main {
+//			display: flex;
+//			flex-wrap: wrap;
+		margin: 0;
+			padding: 0;		
+//			width: 100%;
+//    		justify-content: space-between;
+//    		min-height: 100%;
+//			.page-article {
+//				flex-grow: 4;
+//				max-width: 980px;
+//				padding: $pad;
+//			}
+//			.page-sidebar {
+//				flex-grow: 1;
+//				padding: $pad;
+//			}
+		}
+
+
+
+.wrapper {
+	font-size: 100%;
+}
+.main {
+	font-size: 220%;
+	@media screen and (max-width: $small) {
+    	font-size: 200%;
+  	}
+}
+.header-main {
+	font-size: 100%;
+}

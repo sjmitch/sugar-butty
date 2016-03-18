@@ -1,0 +1,43 @@
+{
+  "primary": [
+    "red",
+    "pink",
+    "purple",
+	"deeppurple",
+	"indigo",
+	"blue",
+	"lightblue",
+	"cyan",
+	"teal",
+	"green",
+	"lightgreen",
+	"lime",
+	"yellow",
+	"amber",
+	"orange",
+	"deeporange",
+	"brown",
+	"grey",
+	"bluegrey",
+	"black",
+	"white"
+  ],
+   "accent": [
+    "Ared",
+    "Apink",
+    "Apurple",
+	"Adeeppurple",
+	"Aindigo",
+	"Ablue",
+	"Alightblue",
+	"Acyan",
+	"Ateal",
+	"Agreen",
+	"Alightgreen",
+	"Alime",
+	"Ayellow",
+	"Aamber",
+	"Aorange",
+	"Adeeporange"
+  ]
+}

@@ -1,0 +1,101 @@
+/*
+ * MODULES/HEADER scss stylesheet
+ * stephen@sugarbutty.com
+ * created February 2016
+ */
+
+
+/* HEADER styles 
+   ========================================================================== */
+
+
+.page-header {
+	box-shadow: 0 2px 5px rgba(0,0,0,0.26);
+	color: $white;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 100%;
+	padding: 0;
+	top: 0;
+	position: fixed;
+	height: auto;
+	overflow: hidden;
+	z-index: 2;
+	transition: background-color .6s;
+
+	// topbar
+	.topbar {
+		    
+		.page-logo {
+			.h1 {
+				font-size: 450%;
+				margin-bottom: 0;
+				opacity: 1;
+				text-align: center;
+				
+				@media screen and (min-width: $medium) {
+					font-size: 600%;
+				}
+			}
+		}
+				
+	}
+
+	.navbar {
+		display: none;
+		height: 0;
+		
+		font-size: 300%;
+		padding: 0;
+		overflow: hidden;
+		//transition: all .6s;
+		box-shadow: 0 2px 5px rgba(0,0,0,0.26);
+		.menu {
+			padding: $pad;
+			margin: 5%;
+    		min-height: 100%;
+    		display: flex;
+    		justify-content: space-between;
+    		align-items: center;
+			@media screen and (orientation: landscape) {
+				margin: 1% 10% 1% 1%;
+			}
+			.menu-title {
+				color: $white;
+				margin-bottom: $pad5;
+				text-align: left;
+    			font-size: 500%;
+				font-family: $cursivefont;
+				position: fixed;
+				opacity: .25;
+    			transform: rotate(-10deg);
+				@media screen and (orientation: landscape) {
+					margin-left: 5%;
+				}
+				@media screen and (max-width: $small) {
+					font-size: 200%;
+				}
+			}
+		}
+				
+	}
+}
+
+
+
+
+.banner {
+	width: 100%;
+}
+
+.control {
+    position: absolute;
+    bottom: 0;
+	height: 0;
+    width: 100%;
+	.control-container {
+		margin: auto;
+		width: 67px;
+	}
+}

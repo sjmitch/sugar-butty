@@ -1,0 +1,107 @@
+/*
+ * FONTS scss stylesheet
+ * stephen@sugarbutty.com
+ * created February 2016
+ */
+
+
+/* @import custom fonts 
+   ========================================================================== */
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700|Source+Serif+Pro|Pacifico);
+
+$brandfont: 'Montserrat', sans-serif;
+$bodyfont: 'Source Serif Pro', serif;
+$headerfont:  'Montserrat', sans-serif;
+$cursivefont: 'Pacifico', cursive;
+
+.font-brand {
+	font-family: $brandfont;
+}
+
+.font-body {
+	font-family: $bodyfont;
+}
+
+.font-header {
+	font-family: $headerfont;
+}
+
+.font-cursive {
+	font-family: $cursivefont;
+}
+
+
+/* FONT styles 
+   ========================================================================== */
+
+html {
+	font-size: $fontsize; // 1 rem = 10px;
+	-webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+body {
+	font-family: $bodyfont;
+	font-size: 100%; 
+}
+
+p {
+	font-size: 100%; 
+    line-height: 1.5em;
+	margin: 0 0 1em;
+}
+
+blockquote {
+	font-size: 85%;
+	margin: 5%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: $headerfont;
+	font-weight: normal;
+	letter-spacing: -.01em;
+	margin: 0 0 1em;
+	text-transform: capitalize;
+	opacity: .75;
+	font-weight: normal;
+}
+
+h1, .h1 {
+	font-size: 200%;
+	margin-bottom: .7em;
+}
+
+h2, .h2 {
+	font-size: 175%;
+}
+
+h3, .h3 {
+	font-size: 150%;
+}
+
+h4, .h4 {
+	font-size: 125%;
+}
+
+h5, .h5 {
+	font-size: 100%;
+	font-weight: bold;
+}
+
+h6, .h6 {
+	font-size: 85%;
+}
+
+
+/* LINK styles
+   ========================================================================== */
+   
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+   

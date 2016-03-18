@@ -1,0 +1,45 @@
+/*
+ * MODULES/COLOURS scss stylesheet
+ * stephen@sugarbutty.com
+ * created February 2016
+ */
+
+
+/* COLOURS styles 
+   ========================================================================== */
+
+
+.colours-container {
+
+	.palette-container {
+		display: flex;
+		height: 2em;
+		width:100%;
+		.spot {
+			align-items: center;
+    		display: flex;
+    		justify-content: center;
+			width: 100%;
+			font-size: 75%;
+			text-align: center;
+			padding: 1%;
+		}
+	}
+}
+
+/* SCREEN WIDTH BREAKPOINTS
+   ========================================================================== */
+
+
+/* Tiny screens */
+@media screen and (max-width: $tiny) {
+
+}
+/* Small screens */
+@media screen and (max-width: $small) {
+
+}
+/* Medium screens */
+@media all and (max-width: $medium) {
+
+}

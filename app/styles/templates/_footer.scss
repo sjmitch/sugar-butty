@@ -1,0 +1,33 @@
+/*
+ * TEMPLATES/FOOTER scss stylesheet
+ * stephen@sugarbutty.com
+ * created March 2016
+ */
+
+
+/* footer */
+
+.page-footer {
+	color: $white;
+	width: 100%;
+	padding: $pad;
+	z-index: 10;
+	transition: background-color .6s;
+
+	.toolbar {
+		display: flex;
+		justify-content: space-between;
+		position: fixed;
+		bottom: 0;
+		right: 0;
+		margin: 20px;
+		flex-direction: column;
+	}
+	
+	.icon {
+		font-size: 40px;
+		@media screen and (min-width: $large) {
+			font-size: 60px;
+		}
+	}
+}

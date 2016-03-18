@@ -1,0 +1,484 @@
+/*
+ * THEME/THEMES scss stylesheet
+ * stephen@sugarbutty.com
+ * created February 2016
+ */
+
+$modify: 20deg;
+
+/* red */
+.bg-red {background-color: $red;}
+.bg-red-light {background-color: lighten($red, $modify);}
+.bg-red-dark {background-color: darken($red, $modify);}
+/* pink */
+.bg-pink {background-color: $pink;}
+.bg-pink-light {background-color: lighten($pink, $modify);}
+.bg-pink-dark {background-color: darken($pink, $modify);}
+/* purple */
+.bg-purple {background-color: $purple;}
+.bg-purple-light {background-color: lighten($purple, $modify);}
+.bg-purple-dark {background-color: darken($purple, $modify);}
+/* deeppurple */
+.bg-deeppurple {background-color: $deeppurple;}
+.bg-deeppurple-light {background-color: lighten($deeppurple, $modify);}
+.bg-deeppurple-dark {background-color: darken($deeppurple, $modify);}
+/* indigo */
+.bg-indigo {background-color: $indigo;}
+.bg-indigo-light {background-color: lighten($indigo, $modify);}
+.bg-indigo-dark {background-color: darken($indigo, $modify);}
+/* blue */
+.bg-blue {background-color: $blue;}
+.bg-blue-light {background-color: lighten($blue, $modify);}
+.bg-blue-dark {background-color: darken($blue, $modify);}
+/* lightblue */
+.bg-lightblue {background-color: $lightblue;}
+.bg-lightblue-light {background-color: lighten($lightblue, $modify);}
+.bg-lightblue-dark {background-color: darken($lightblue, $modify);}
+/* cyan */
+.bg-cyan {background-color: $cyan;}
+.bg-cyan-light {background-color: lighten($cyan, $modify);}
+.bg-cyan-dark {background-color: darken($cyan, $modify);}
+/* teal */
+.bg-teal {background-color: $teal;}
+.bg-teal-light {background-color: lighten($teal, $modify);}
+.bg-teal-dark {background-color: darken($teal, $modify);}
+/* green */
+.bg-green {background-color: $green;}
+.bg-green-light {background-color: lighten($green, $modify);}
+.bg-green-dark {background-color: darken($green, $modify);}
+/* lightgreen */
+.bg-lightgreen {background-color: $lightgreen;}
+.bg-lightgreen-light {background-color: lighten($lightgreen, $modify);}
+.bg-lightgreen-dark {background-color: darken($lightgreen, $modify);}
+/* lime */
+.bg-lime {background-color: $lime;}
+.bg-lime-light {background-color: lighten($lime, $modify);}
+.bg-lime-dark {background-color: darken($lime, $modify);}
+/* yellow */
+.bg-yellow {background-color: $yellow;}
+.bg-yellow-light {background-color: lighten($yellow, $modify);}
+.bg-yellow-dark {background-color: darken($yellow, $modify);}
+/* amber */
+.bg-amber {background-color: $amber;}
+.bg-amber-light {background-color: lighten($amber, $modify);}
+.bg-amber-dark {background-color: darken($amber, $modify);}
+/* orange */
+.bg-orange {background-color: $orange;}
+.bg-orange-light {background-color: lighten($orange, $modify);}
+.bg-orange-dark {background-color: darken($orange, $modify);}
+/* deeporange */
+.bg-deeporange {background-color: $deeporange;}
+.bg-deeporange-light {background-color: lighten($deeporange, $modify);}
+.bg-deeporange-dark {background-color: darken($deeporange, $modify);}
+/* brown */
+.bg-brown {background-color: $brown;}
+.bg-brown-light {background-color: lighten($brown, $modify);}
+.bg-brown-dark {background-color: darken($brown, $modify);}
+/* grey */
+.bg-grey {background-color: $grey;}
+.bg-grey-light {background-color: lighten($grey, $modify);}
+.bg-grey-dark {background-color: darken($grey, $modify);}
+/* bluegrey */
+.bg-bluegrey {background-color: $bluegrey;}
+.bg-bluegrey-light {background-color: lighten($bluegrey, $modify);}
+.bg-bluegrey-dark {background-color: darken($bluegrey, $modify);}
+/* black */
+.bg-black {background-color: $black;}
+.bg-black-light {background-color: lighten($black, $modify);}
+.bg-black-dark {background-color: darken($black, $modify);}
+/* white */
+.bg-white {background-color: $white;}
+.bg-white-light {background-color: lighten($white, $modify);}
+.bg-white-dark {background-color: darken($white, $modify);}
+
+.theme-red {
+	$color: $red;
+  	.bg {
+    	background-color: $color;
+  	}
+	.bg-light {
+    	background-color: lighten($color, $modify);
+ 	}
+	.bg-dark {
+    	background-color: darken($color, $modify);
+ 	}
+}
+.theme-pink {
+	$color: $pink;
+  	.bg {
+    	background-color: $color;
+  	}
+	.bg-light {
+    	background-color: lighten($color, $modify);
+ 	}
+	.bg-dark {
+    	background-color: darken($color, $modify);
+ 	}
+}
+.theme-purple {
+	$color: $purple;
+  	.bg {
+    	background-color: $color;
+  	}
+	.bg-light {
+    	background-color: lighten($color, $modify);
+ 	}
+	.bg-dark {
+    	background-color: darken($color, $modify);
+ 	}
+}
+.theme-deeppurple {
+	$color: $deeppurple;
+  	.bg {
+    	background-color: $color;
+  	}
+	.bg-light {
+    	background-color: lighten($color, $modify);
+ 	}
+	.bg-dark {
+    	background-color: darken($color, $modify);
+ 	}
+}
+.theme-indigo {
+	$color: $indigo;
+  	.bg {
+    	background-color: $color;
+  	}
+	.bg-light {
+    	background-color: lighten($color, $modify);
+ 	}
+	.bg-dark {
+    	background-color: darken($color, $modify);
+ 	}
+}
+.theme-blue {
+	$color: $blue;
+  	.bg {
+    	background-color: $color;
+  	}
+	.bg-light {
+    	background-color: lighten($color, $modify);
+ 	}
+	.bg-dark {
+    	background-color: darken($color, $modify);
+ 	}
+}
+.theme-lightblue {
+	$color: $lightblue;
+  	.bg {
+    	background-color: $color;
+  	}
+	.bg-light {
+    	background-color: lighten($color, $modify);
+ 	}
+	.bg-dark {
+    	background-color: darken($color, $modify);
+ 	}
+}
+.theme-teal {
+	$color: $teal;
+  	.bg {
+    	background-color: $color;
+  	}
+	.bg-light {
+    	background-color: lighten($color, $modify);
+ 	}
+	.bg-dark {
+    	background-color: darken($color, $modify);
+ 	}
+}
+.theme-green {
+	$color: $green;
+  	.bg {
+    	background-color: $color;
+  	}
+	.bg-light {
+    	background-color: lighten($color, $modify);
+ 	}
+	.bg-dark {
+    	background-color: darken($color, $modify);
+ 	}
+}
+.theme-lightgreen {
+	$color: $lightgreen;
+  	.bg {
+    	background-color: $color;
+  	}
+	.bg-light {
+    	background-color: lighten($color, $modify);
+ 	}
+	.bg-dark {
+    	background-color: darken($color, $modify);
+ 	}
+}
+.theme-lime {
+	$color: $lime;
+  	.bg {
+    	background-color: $color;
+  	}
+	.bg-light {
+    	background-color: lighten($color, $modify);
+ 	}
+	.bg-dark {
+    	background-color: darken($color, $modify);
+ 	}
+}
+.theme-yellow {
+ 	$color: $yellow;
+  	.bg {
+    	background-color: $color;
+  	}
+	.bg-light {
+    	background-color: lighten($color, $modify);
+ 	}
+	.bg-dark {
+    	background-color: darken($color, $modify);
+ 	}
+}
+.theme-amber {
+	$color: $amber;
+  	.bg {
+    	background-color: $color;
+  	}
+	.bg-light {
+    	background-color: lighten($color, $modify);
+ 	}
+	.bg-dark {
+    	background-color: darken($color, $modify);
+ 	}
+}
+.theme-orange {
+	$color: $orange;
+  	.bg {
+    	background-color: $color;
+  	}
+	.bg-light {
+    	background-color: lighten($color, $modify);
+ 	}
+	.bg-dark {
+    	background-color: darken($color, $modify);
+ 	}
+}
+.theme-deeporange {
+	$color: $deeporange;
+  	.bg {
+    	background-color: $color;
+  	}
+	.bg-light {
+    	background-color: lighten($color, $modify);
+ 	}
+	.bg-dark {
+    	background-color: darken($color, $modify);
+ 	}
+}
+.theme-brown {
+	$color: $brown;
+  	.bg {
+    	background-color: $color;
+  	}
+	.bg-light {
+    	background-color: lighten($color, $modify);
+ 	}
+	.bg-dark {
+    	background-color: darken($color, $modify);
+ 	}
+}
+.theme-grey {
+	$color: $grey;
+  	.bg {
+    	background-color: $color;
+  	}
+	.bg-light {
+    	background-color: lighten($color, $modify);
+ 	}
+	.bg-dark {
+    	background-color: darken($color, $modify);
+ 	}
+}
+.theme-bluegrey {
+	$color: $bluegrey;
+  	.bg {
+    	background-color: $color;
+  	}
+	.bg-light {
+    	background-color: lighten($color, $modify);
+ 	}
+	.bg-dark {
+    	background-color: darken($color, $modify);
+ 	}
+}
+.theme-black {
+	$color: $black;
+  	.bg {
+    	background-color: $color;
+  	}
+	.bg-light {
+    	background-color: lighten($color, $modify);
+ 	}
+	.bg-dark {
+    	background-color: darken($color, $modify);
+ 	}
+}
+.theme-white {
+	$color: $white;
+  	.bg {
+    	background-color: $color;
+  	}
+	.bg-light {
+    	background-color: lighten($color, $modify);
+ 	}
+	.bg-dark {
+    	background-color: darken($color, $modify);
+ 	}
+}
+
+.bg {
+	color: $white;
+}
+
+
+/* ACCENT COLOURS
+   ========================================================================== */
+
+/* red */
+.bg-Ared {background-color: $Ared;}
+.bg-Ared-light {background-color: lighten($Ared, $modify);}
+.bg-Ared-dark {background-color: darken($Ared, $modify);}
+/* pink */
+.bg-Apink {background-color: $Apink;}
+.bg-Apink-light {background-color: lighten($Apink, $modify);}
+.bg-Apink-dark {background-color: darken($Apink, $modify);}
+/* purple */
+.bg-Apurple {background-color: $Apurple;}
+.bg-Apurple-light {background-color: lighten($Apurple, $modify);}
+.bg-Apurple-dark {background-color: darken($Apurple, $modify);}
+/* deeppurple */
+.acc-deeppurple {background-color: $Adeeppurple;}
+.acc-deeppurple-light {background-color: lighten($Adeeppurple, $modify);}
+.acc-deeppurple-dark {background-color: darken($Adeeppurple, $modify);}
+/* indigo */
+.acc-indigo {background-color: $Aindigo;}
+.acc-indigo-light {background-color: lighten($Aindigo, $modify);}
+.acc-indigo-dark {background-color: darken($Aindigo, $modify);}
+/* blue */
+.acc-blue {background-color: $Ablue;}
+.acc-blue-light {background-color: lighten($Ablue, $modify);}
+.acc-blue-dark {background-color: darken($Ablue, $modify);}
+/* lightblue */
+.acc-lightblue {background-color: $Alightblue;}
+.acc-lightblue-light {background-color: lighten($Alightblue, $modify);}
+.acc-lightblue-dark {background-color: darken($Alightblue, $modify);}
+/* cyan */
+.acc-cyan {background-color: $Acyan;}
+.acc-cyan-light {background-color: lighten($Acyan, $modify);}
+.acc-cyan-dark {background-color: darken($Acyan, $modify);}
+/* teal */
+.acc-teal {background-color: $Ateal;}
+.acc-teal-light {background-color: lighten($Ateal, $modify);}
+.acc-teal-dark {background-color: darken($Ateal, $modify);}
+/* green */
+.acc-green {background-color: $Agreen;}
+.acc-green-light {background-color: lighten($Agreen, $modify);}
+.acc-green-dark {background-color: darken($Agreen, $modify);}
+/* lightgreen */
+.acc-lightgreen {background-color: $Alightgreen;}
+.acc-lightgreen-light {background-color: lighten($Alightgreen, $modify);}
+.acc-lightgreen-dark {background-color: darken($Alightgreen, $modify);}
+/* lime */
+.acc-lime {background-color: $Alime;}
+.acc-lime-light {background-color: lighten($Alime, $modify);}
+.acc-lime-dark {background-color: darken($Alime, $modify);}
+/* yellow */
+.acc-yellow {background-color: $Ayellow;}
+.acc-yellow-light {background-color: lighten($Ayellow, $modify);}
+.acc-yellow-dark {background-color: darken($Ayellow, $modify);}
+/* amber */
+.acc-amber {background-color: $Aamber;}
+.acc-amber-light {background-color: lighten($Aamber, $modify);}
+.acc-amber-dark {background-color: darken($Aamber, $modify);}
+/* orange */
+.acc-orange {background-color: $Aorange;}
+.acc-orange-light {background-color: lighten($Aorange, $modify);}
+.acc-orange-dark {background-color: darken($Aorange, $modify);}
+/* deeporange */
+.acc-deeporange {background-color: $Adeeporange;}
+.acc-deeporange-light {background-color: lighten($Adeeporange, $modify);}
+.acc-deeporange-dark {background-color: darken($Adeeporange, $modify);}
+
+
+
+.accent-red {
+  	.accent {
+    	background-color: $Ared;
+  }
+}
+.accent-pink {
+  	.accent {
+    	background-color: $Apink;
+  }
+}
+.accent-purple {
+  	.accent {
+    	background-color: $Apurple;
+  }
+}
+.accent-deeppurple {
+  	.accent {
+    	background-color: $Adeeppurple;
+  }
+}
+.accent-indigo {
+  	.accent {
+    	background-color: $Aindigo;
+  }
+}
+.accent-blue {
+  	.accent {
+    	background-color: $Ablue;
+  }
+}
+.accent-lightblue {
+  	.accent {
+    	background-color: $Alightblue;
+  }
+}
+.accent-teal {
+  	.accent {
+    	background-color: $Ateal;
+  }
+}
+.accent-green {
+  	.accent {
+    	background-color: $Agreen;
+  }
+}
+.accent-lightgreen {
+  	.accent {
+    	background-color: $Alightgreen;
+  }
+}
+.accent-lime {
+  	.accent {
+    	background-color: $Alime;
+  }
+}
+.accent-yellow {
+  	.accent {
+    	background-color: $Ayellow;
+  }
+}
+.accent-amber {
+  	.accent {
+    	background-color: $Aamber;
+  }
+}
+.accent-orange {
+  	.accent {
+    	background-color: $Aorange;
+  }
+}
+.accent-deeporange {
+  	.accent {
+    	background-color: $Adeeporange;
+  }
+}

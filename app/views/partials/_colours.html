@@ -1,0 +1,12 @@
+<div class='colours-container'>
+	<h4>Primary colours</h4>
+	<div class='palette-container' ng-repeat="colour in colours" ng-class='{invert:data.invert}'>
+		<div class='spot bg-{{colour}}-light'><code>lighter</code></div>
+		<div class='spot bg-{{colour}}'><code>{{colour}}</code></div>
+		<div class='spot bg-{{colour}}-dark'><code>darker</code></div>
+	</div>
+	<h4>Accent colours</h4>
+	<div class='palette-container' ng-repeat="colour in accent" ng-class='{invert:data.invert}'>
+		<div class='spot accent-bg-{{colour}}'><code>{{colour}}</code></div>
+	</div>
+</div>

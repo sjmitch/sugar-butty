@@ -1,0 +1,115 @@
+/*
+ * HELPERS scss stylesheet
+ * stephen@sugarbutty.com
+ * created February 2016
+ */
+
+
+/* BOX basic properties - display, position, width, height, overflow
+   ========================================================================== */
+
+
+/* 
+ * display  
+*/
+
+.block {
+	display: block;
+}
+.inline {
+	display: inline;
+}
+.inline-block {
+	display: inline-block;
+}
+.none, .hide {
+	display: none;
+}
+
+
+/* 
+ * position  
+*/
+
+.absolute {
+	position: absolute;
+}
+.relative {
+	position: relative;
+}
+.fixed {
+	position: fixed;
+}
+
+
+
+/* FLEX styles 
+   ========================================================================== */
+
+
+.flex {
+  display: flex;  
+}
+.flex-inline {
+  display: inline-flex;
+}
+
+/* flex-direction */
+.flex-row {
+	flex-direction: row;
+}
+.flex-row_reverse {
+	flex-direction: row-reverse;
+}
+.flex-column {
+	flex-direction: column;
+}
+.flex-column_reverse {
+	flex-direction: column-reverse;
+}
+
+/* flex-wrap */
+.flex-wrap {
+    flex-wrap: wrap;
+}
+.flex-nowrap {
+	flex-wrap: nowrap;
+}
+.flex-wrap_reverse {
+	flex-wrap: wrap-reverse;
+}
+
+/* justify-content */
+.justify-start {
+	justify-content: flex-start;
+}
+.justify-end {
+	justify-content: flex-start;
+}
+.justify-center {
+	justify-content: center;
+}
+
+/* ?? styles 
+   ========================================================================== */
+
+.circle {
+	border-radius: 50%;
+}
+
+.rounded {
+	border-radius: .4em;
+}
+
+.txt-left {
+	text-align: left;
+}
+.txt-right {
+ 	text-align: right;
+}
+.txt-center {
+ 	text-align: center;
+}
+.txt-justify {
+ 	text-align: justify;
+}
