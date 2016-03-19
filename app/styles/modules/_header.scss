@@ -20,7 +20,6 @@
 	top: 0;
 	position: fixed;
 	height: auto;
-	overflow: hidden;
 	z-index: 2;
 	transition: background-color .6s;
 
@@ -41,16 +40,22 @@
 		}
 				
 	}
+	
+	&.open .navbar {
+		left: 0;
+	}
 
 	.navbar {
-		display: none;
-		height: 0;
-		
+		display: flex;	
 		font-size: 300%;
 		padding: 0;
 		overflow: hidden;
-		//transition: all .6s;
+		transition: all .6s;
+		position: absolute;
 		box-shadow: 0 2px 5px rgba(0,0,0,0.26);
+		max-width: 500px;
+		left: -100%;
+		
 		.menu {
 			padding: $pad;
 			margin: 5%;

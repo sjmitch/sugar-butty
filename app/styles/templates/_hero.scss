@@ -16,6 +16,7 @@
 	
 	.hero-media {
 		background-image: url('/images/banner.png');
+		background-attachment: fixed;
 		background-size: cover;
 		align-items: center;
     	justify-content: center;
@@ -28,13 +29,14 @@
 	.hero-content {
 		background: transparent;
 		display: flex;
-		align-items: center;
-		flex-direction: column;
-    	justify-content: center;
+		align-items: flex-end;
+		flex-direction: row;
+    	justify-content: flex-start;
 		height: 100%;
 		width: 100%;
 		position: relative;
 		top: 0;
+		padding: 20%;
 	}
 
 }

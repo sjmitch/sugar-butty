@@ -53,35 +53,3 @@ dt, .dt {
 dd, .dd {
 	margin: 0;
 }
-
-
-/* CUSTOM properties - ul, ol, li, dl, dt, dd
-   ========================================================================== */
-
-
-/* 
- * ul  
-*/
-
-ul, .ul, ol, .ol {
-	/* styles */
-}
-
-
-
-/* SCREEN WIDTH BREAKPOINTS
-   ========================================================================== */
-
-
-/* Tiny screens */
-@media screen and (max-width: 320px) {
-	/* styles */
-}
-/* Small screens */
-@media screen and (max-width: 550px) {
-	/* styles */
-}
-/* Medium screens */
-@media all and (max-width: 768px) {
-	/* styles */
-}

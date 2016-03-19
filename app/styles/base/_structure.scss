@@ -17,6 +17,7 @@ body {
 	position: relative;
 }
 
+div,
 article,
 aside,
 details,
@@ -85,36 +86,12 @@ $pad10: $fontsize;
 	}	
 }
 
-
-
-
-
-		.page-main {
-//			display: flex;
-//			flex-wrap: wrap;
-		margin: 0;
-			padding: 0;		
-//			width: 100%;
-//    		justify-content: space-between;
-//    		min-height: 100%;
-//			.page-article {
-//				flex-grow: 4;
-//				max-width: 980px;
-//				padding: $pad;
-//			}
-//			.page-sidebar {
-//				flex-grow: 1;
-//				padding: $pad;
-//			}
-		}
-
-
-
 .wrapper {
 	font-size: 100%;
 }
 .main {
-	font-size: 220%;
+	font-size: 260%;
+	letter-spacing: .02em;
 	@media screen and (max-width: $small) {
     	font-size: 200%;
   	}

@@ -22,7 +22,7 @@ angular.module('buttyApp')
 			//  toggle menu display
 			scope.fn.menucontrol($event);
 			  
-		  })
+		  });
 
         //	console.log('LINKED logo');
       }

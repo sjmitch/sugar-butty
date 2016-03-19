@@ -13,7 +13,13 @@
 	</div>
 
 	<!-- nav bar -->
-	<nav class='navbar bg'>
+	<nav class='navbar bg' ng-style='{height: data.screenheight+ "px"}'>
+		
+		<!-- menu control -->
+		<div class="menu-control">
+			<button class="btn btn-flat btn-menu" ng-click="menucontrol($event)"><i class="material-icons">menu</i></button>
+		</div> 
+		
 		<dx-menu></dx-menu>
 	</nav>
 

@@ -12,3 +12,27 @@
 .widget {
 	padding: 5%;	
 }
+
+.quote {
+	position: relative;
+	
+	&:before, &:after {
+		position: absolute;
+		
+		font-size: 5em;
+		color: $midgrey;
+		line-height: 1;
+	}
+	
+	&:before {
+		left: 5%;
+		top: 15%;
+		content: '\201c';
+	}
+	
+	&:after {
+		left: 90%;
+		top: 33%;
+    	content: '\201d';
+	}
+}
