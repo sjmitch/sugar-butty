@@ -1,8 +1,13 @@
-<header id='header' class='header page-header bg-dark' ng-class='{open:data.menuopen}'>
+<header id='header' class='Header bg-dark'  ng-class='{open:data.menuopen}'>
 
 	<!-- top bar -->
 	<div class='topbar'>
-
+		
+		<!-- menu control -->
+		<div class="menu-control">
+			<button class="btn btn-flat btn-menu" ng-click="fn.menucontrol($event)"  ng-class='{animate:data.menuopen}'><i class="material-icons">menu</i></button>
+		</div> 
+		
 		<!-- logo -->
 		<div class='page-logo'>
 			<h1 class='h1'>
@@ -10,17 +15,21 @@
 			</h1>
 		</div>
 		
+		<!-- dashboard control -->
+		<div class="menu-control">
+			<button class="btn btn-flat btn-menu" ng-click="fn.menucontrol($event)"><i class="material-icons">dashboard</i></button>
+		</div> 
+		
 	</div>
 
 	<!-- nav bar -->
 	<nav class='navbar bg' ng-style='{height: data.screenheight+ "px"}'>
+
+		<!-- menu -->
+		<div class='menu-wrap'>
+			<dx-menu></dx-menu>
+		</div>
 		
-		<!-- menu control -->
-		<div class="menu-control">
-			<button class="btn btn-flat btn-menu" ng-click="menucontrol($event)"><i class="material-icons">menu</i></button>
-		</div> 
-		
-		<dx-menu></dx-menu>
 	</nav>
 
 </header>

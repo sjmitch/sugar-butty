@@ -32,12 +32,6 @@ angular.module('buttyApp')
 		
 		  };
 		 
-		 
-		  element.click(function($event){ 
-										 
-			scope.menucontrol($event);
-		
-		  });
 		  
 		  // add function to global 
 		  global.fn.menucontrol = scope.menucontrol;

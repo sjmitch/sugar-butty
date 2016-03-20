@@ -9,7 +9,7 @@
    ========================================================================== */
 
 
-.page-header {
+.Header {
 	box-shadow: 0 2px 5px rgba(0,0,0,0.26);
 	color: $white;
 	display: flex;
@@ -25,36 +25,17 @@
 
 	// topbar
 	.topbar {
-		    
-		.page-logo {
-			.h1 {
-				font-size: 450%;
-				margin-bottom: 0;
-				opacity: 1;
-				text-align: center;
+		display: flex;
+		justify-content: space-between;
+		padding: 0 20px;
 				
-				@media screen and (min-width: $medium) {
-					font-size: 600%;
-				}
-			}
+		.menu-control {
+			display: flex;
+			align-items: center;
+			transition: all .6s;		
 		}
-				
-	}
-	
-	&.open .navbar {
-		left: 0;
-	}
-
-	.navbar {
-		display: flex;	
-		font-size: 300%;
-		padding: 0;
-		overflow: hidden;
-		transition: all .6s;
-		position: absolute;
-		box-shadow: 0 2px 5px rgba(0,0,0,0.26);
-		max-width: 500px;
-		left: -100%;
+		
+		
 		
 		.menu {
 			padding: $pad;
@@ -64,43 +45,50 @@
     		justify-content: space-between;
     		align-items: center;
 			@media screen and (orientation: landscape) {
-				margin: 1% 10% 1% 1%;
+				//margin: 1% 10% 1% 1%;
 			}
-			.menu-title {
-				color: $white;
-				margin-bottom: $pad5;
-				text-align: left;
-    			font-size: 500%;
-				font-family: $cursivefont;
-				position: fixed;
-				opacity: .25;
-    			transform: rotate(-10deg);
-				@media screen and (orientation: landscape) {
-					margin-left: 5%;
-				}
-				@media screen and (max-width: $small) {
-					font-size: 200%;
-				}
+			
+		}
+		
+		.btn-menu {
+			display: flex;
+			font-size: 4em;
+			padding: 0;
+			transform: rotate(0);
+			transition: all .6s ease-in-out;
+			
+			&.animate {
+				transform: rotate(-90deg);
+			}
+		}
+		
+		
+		    
+		.page-logo {
+			.h1 {
+				font-size: 450%;
+				margin-bottom: 0;
+				opacity: 1;
+				text-align: center;
 			}
 		}
 				
 	}
-}
-
-
-
-
-.banner {
-	width: 100%;
-}
-
-.control {
-    position: absolute;
-    bottom: 0;
-	height: 0;
-    width: 100%;
-	.control-container {
-		margin: auto;
-		width: 67px;
+	
+	// navbar
+	&.open .navbar {
+			transform: translateX(0);
+	}
+	
+	.navbar {
+		display: flex;	
+		font-size: 300%;
+		padding: 0;
+		position: absolute;
+		box-shadow: 0 2px 5px rgba(0,0,0,0.26);
+		max-width: 500px;
+		transform: translateX(-100%);
+		transition: all .6s ease-in;
+				
 	}
 }
