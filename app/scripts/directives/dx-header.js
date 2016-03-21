@@ -7,7 +7,7 @@
  * # dxHeader
  */
 angular.module('buttyApp')
-  .directive('dxHeader', function (global,$window) {
+  .directive('dxHeader', function (global,$window,$timeout) {
     return {
       templateUrl: 'views/templates/_header.html',
 	  replace: true,
@@ -22,12 +22,16 @@ angular.module('buttyApp')
 		  
 		 // MENU DISPLAY /////////////////////////////////////////////////////////
 		  
-		 scope.data.menuopen = true;
+		 scope.data.menuopen = false;
 		  
 		 scope.menucontrol = function($event){
 
 			  scope.data.menuopen ? scope.data.menuopen = false : scope.data.menuopen = true ;
-			  scope.$apply();
+			 
+			  $timeout(function() {
+            		scope.$apply();
+            	}, 0, false);
+			 
 			  $event.stopPropagation();
 		
 		  };
@@ -35,16 +39,8 @@ angular.module('buttyApp')
 		  
 		  // add function to global 
 		  global.fn.menucontrol = scope.menucontrol;
-		  
-		  	
 
-		  
-		  
-		  
-		  
-		  
 		  console.log('LINKED header');
-		  console.log(global.fn);
 
       }
     };

@@ -57,7 +57,11 @@ p {
 blockquote {
 	font-family: $quotefont;
 	font-size: 95%;
-	margin: 0 10%;
+	margin: 0 15% 0 20%;
+	
+	p {
+		line-height: 1.2;
+	}
 }
 
 h1, h2, h3, h4, h5, h6 {

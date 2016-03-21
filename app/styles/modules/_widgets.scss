@@ -18,7 +18,6 @@
 	
 	&:before, &:after {
 		position: absolute;
-		
 		font-size: 5em;
 		color: $midgrey;
 		line-height: 1;
@@ -26,13 +25,13 @@
 	
 	&:before {
 		left: 5%;
-		top: 15%;
+		top: 2%;
 		content: '\201c';
 	}
 	
 	&:after {
-		left: 90%;
-		top: 33%;
+		right: 4%;
+		bottom: 5%;
     	content: '\201d';
 	}
 }

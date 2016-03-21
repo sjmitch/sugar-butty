@@ -28,14 +28,16 @@
 		display: flex;
 		justify-content: space-between;
 		padding: 0 20px;
+		
+		@media screen and (max-width: $small) {
+			padding: 0 10px;
+		}
 				
 		.menu-control {
 			display: flex;
 			align-items: center;
 			transition: all .6s;		
-		}
-		
-		
+		}		
 		
 		.menu {
 			padding: $pad;
@@ -43,11 +45,7 @@
     		min-height: 100%;
     		display: flex;
     		justify-content: space-between;
-    		align-items: center;
-			@media screen and (orientation: landscape) {
-				//margin: 1% 10% 1% 1%;
-			}
-			
+    		align-items: center;			
 		}
 		
 		.btn-menu {
@@ -55,14 +53,16 @@
 			font-size: 4em;
 			padding: 0;
 			transform: rotate(0);
-			transition: all .6s ease-in-out;
+			transition: all .3s ease-in-out;
 			
 			&.animate {
 				transform: rotate(-90deg);
 			}
-		}
-		
-		
+			
+			@media screen and (max-width: $small) {
+					font-size: 3em;
+			}
+		}		
 		    
 		.page-logo {
 			.h1 {
@@ -70,6 +70,10 @@
 				margin-bottom: 0;
 				opacity: 1;
 				text-align: center;
+				
+				@media screen and (max-width: $small) {
+					font-size: 300%;
+				}
 			}
 		}
 				
@@ -77,18 +81,16 @@
 	
 	// navbar
 	&.open .navbar {
-			transform: translateX(0);
+			transform: translate3d(0px,0px,0px);
 	}
 	
 	.navbar {
 		display: flex;	
-		font-size: 300%;
+		font-size: 200%;
 		padding: 0;
 		position: absolute;
-		box-shadow: 0 2px 5px rgba(0,0,0,0.26);
-		max-width: 500px;
-		transform: translateX(-100%);
-		transition: all .6s ease-in;
-				
+		transform: translate3d(-100%,0px,0px);
+		transition: all .3s ease-in;
+		overflow: auto;		
 	}
 }

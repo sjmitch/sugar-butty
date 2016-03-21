@@ -231,11 +231,11 @@ $modify: 10deg;
 	$color: $lime;
   	.bg {
     	background-color: $color;
-		color: $black;
+		//color: $black;
   	}
 	.bg-light {
     	background-color: lighten($color, $modify);
-		color: $black;
+		//color: $black;
  	}
 	.bg-dark {
     	background-color: darken($color, $modify);
@@ -245,15 +245,15 @@ $modify: 10deg;
  	$color: $yellow;
   	.bg {
     	background-color: $color;
-		color: $black;
+		//color: $black;
   	}
 	.bg-light {
     	background-color: lighten($color, $modify);
-		color: $black;
+		//color: $black;
  	}
 	.bg-dark {
     	background-color: darken($color, $modify);
-		color: $black;
+		//color: $black;
  	}
 }
 .theme-amber {

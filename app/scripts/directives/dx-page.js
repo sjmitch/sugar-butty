@@ -94,7 +94,7 @@ angular.module('buttyApp')
 			};
 
 			scope.screenresize();
-		//////////////////////////////////////////////////////////////////////////////
+			//////////////////////////////////////////////////////////////////////////////
 		  
 		  // ON WINDOW SCROLL /////////////////////////////////////////////////////////
 		  scope.lastScrollTop = 0;
@@ -113,11 +113,6 @@ angular.module('buttyApp')
 				} 
 					scope.lastScrollTop = top;
 						 
-				
-				
-				
-				
-	
 			};
 		  
 		  scope.scrollTo = function(){

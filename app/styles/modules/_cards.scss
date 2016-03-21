@@ -11,25 +11,50 @@
 
 .cards {
 	display: flex;
-	flex-wrap: wrap;
-	margin: 0 auto;
-    padding: 0;
-    justify-content: center;
+	flex-direction: column;
+    padding: 0 0 3em;
+    justify-content: flex-start;
     position: relative;
-	max-width: 300px;
+	overflow: hidden;
+	
 	@media screen and (orientation: landscape) {
 		margin: auto;
-		padding-bottom: 0;
+
 	}
+	
 	.card {	
 		display: block;
 		line-height: 200%;
-    	margin: 5% auto;
+    	width: 100%;
+		
 		.cardlink {
-			padding: $pad10;
-			box-shadow: 0 2px 5px rgba(0,0,0,0.26);
-			border-radius: 20px;
+			display: block;
+			padding: 10px 85px 10px 30px;
+			box-shadow: 2px 2px 5px rgba(0,0,0,0.26);
 			text-decoration: none;
+			margin: 5% 5% 0 0;
+			position: relative;
+			
+			&:after {
+				position: absolute;
+				font-size: 2em;
+				opacity: .5;
+				line-height: 1;
+				right: 5%;
+				top: 13%;
+				@extend .material-icons;
+        		content: 'fiber_manual_record';
+			}
+			
+			&.active:after {
+				opacity: 1;
+        		content: 'fiber_smart_record';
+				right: 2%;
+			}
+			
+			&.active:hover {
+				cursor: pointer;
+			}
 		}
 	}
 }

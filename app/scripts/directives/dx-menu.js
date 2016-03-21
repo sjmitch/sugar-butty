@@ -13,6 +13,17 @@ angular.module('buttyApp')
 	  replace: true,
       restrict: 'E',
       link: function postLink(scope, element, attrs) {
+		  
+		  scope.fn = global.fn;
+		  scope.data = global.data;
+		  
+		  // toggle menu
+		  element.click(function($event){
+		  	// toggle menu display
+		  	scope.data.menuopen ? scope.fn.menucontrol($event) : null;
+			//  scroll to content
+			scope.fn.scrollTo(); 
+		  });
 		 
         console.log('LINKED menu');
       }
