@@ -1,11 +1,12 @@
 <div class='menu'>
 
 	<ul class='cards'>
-		<li class='card'><a ng-href='#/' class='cardlink bg-accent active'>Home</a></li>
-		<li class='card'><a ng-href='#/section/colours' class='cardlink bg-accent'>Colours</a></li>
-		<li class='card'><a ng-href='#/section/bacon' class='cardlink bg-accent'>Bacon</a></li>
-		<li class='card'><a ng-href='#/about' class='cardlink bg-accent'>About</a></li>
-		<li class='card'><a ng-href='#/about' class='cardlink bg-accent'>About</a></li>
+		<li class='card'>
+			<a ng-href='#/' class='cardlink bg-accent' ng-class='{active : data.view === "/" }'>Home</a>
+		</li>
+		<li class='card' ng-repeat="item in data.menu">
+			<a ng-href='#/{{item}}' class='cardlink bg-accent' ng-class='{active : data.view === "/{{item}}" }'>{{item}}</a>
+		</li>
 	</ul>
 
 </div>

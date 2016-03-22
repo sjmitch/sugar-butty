@@ -30,12 +30,12 @@ angular
         controller: 'AboutCtrl',
         controllerAs: 'about'
       })
-	  .when('/section/bacon', {
+	  .when('/bacon', {
         templateUrl: 'views/bacon.html',
         controller: 'AboutCtrl',
         controllerAs: 'about'
       })
-	  .when('/section/colours', {
+	  .when('/colours', {
         templateUrl: 'views/colours.html',
         controller: 'AboutCtrl',
         controllerAs: 'about'

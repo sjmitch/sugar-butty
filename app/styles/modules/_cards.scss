@@ -29,18 +29,19 @@
 		
 		.cardlink {
 			display: block;
-			padding: 10px 85px 10px 30px;
+			padding: 10px 85px 10px 18px;
 			box-shadow: 2px 2px 5px rgba(0,0,0,0.26);
 			text-decoration: none;
 			margin: 5% 5% 0 0;
 			position: relative;
+			text-transform: capitalize;
 			
 			&:after {
 				position: absolute;
 				font-size: 2em;
 				opacity: .5;
 				line-height: 1;
-				right: 5%;
+				right: 8%;
 				top: 13%;
 				@extend .material-icons;
         		content: 'fiber_manual_record';
@@ -49,7 +50,7 @@
 			&.active:after {
 				opacity: 1;
         		content: 'fiber_smart_record';
-				right: 2%;
+				right: 5%;
 			}
 			
 			&.active:hover {

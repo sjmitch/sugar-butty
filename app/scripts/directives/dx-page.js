@@ -19,8 +19,6 @@ angular.module('buttyApp')
 		  scope.fn = global.fn;
 		  scope.data = global.data;
 		  
-		  global.data.pristine = true;
-		  
 		  //get colours data
 		  scope.getcolours = function(){
 			
