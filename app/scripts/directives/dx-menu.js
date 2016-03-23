@@ -7,7 +7,7 @@
  * # dxMenu
  */
 angular.module('buttyApp')
-  .directive('dxMenu', function (global,$window,$location,$http) {
+  .directive('dxMenu', function (global,$window,$http) {
     return {
       templateUrl: 'views/partials/_menu.html',
 	  replace: true,

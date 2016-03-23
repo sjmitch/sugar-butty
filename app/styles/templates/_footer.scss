@@ -19,14 +19,16 @@
 		position: fixed;
 		bottom: 0;
 		right: 0;
-		margin: 20px;
+		margin: 0;
 		flex-direction: column;
+		
+		.footer-tools {
+			display: flex;
+			flex-direction: column;
+		}
 	}
 	
 	.icon {
 		font-size: 40px;
-		@media screen and (min-width: $large) {
-			font-size: 60px;
-		}
 	}
 }

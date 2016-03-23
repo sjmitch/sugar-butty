@@ -68,7 +68,7 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: $headerfont;
 	font-weight: normal;
 	letter-spacing: -.01em;
-	margin: 0 0 1em;
+	margin: 0 0 .5em;
 	text-transform: capitalize;
 	opacity: .75;
 	font-weight: normal;
@@ -76,7 +76,6 @@ h1, h2, h3, h4, h5, h6 {
 
 h1, .h1 {
 	font-size: 200%;
-	//margin-bottom: .7em;
 }
 
 h2, .h2 {
@@ -93,7 +92,6 @@ h4, .h4 {
 
 h5, .h5 {
 	font-size: 100%;
-	font-weight: bold;
 }
 
 h6, .h6 {

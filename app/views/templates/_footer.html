@@ -4,8 +4,12 @@
 		<dx-menu></dx-menu>
 	</div>
 	
-	<div class='toolbar footer-toolbar'>        
-		<button class='btn bg-dark' ng-click='fn.settheme()'><i class="material-icons icon">palette</i></button> 
-		<button class='btn bg-dark' ng-click='fn.setinvert()'><i class="material-icons icon">opacity</i></button> 
-	</div>   
+	<div class='toolbar footer-toolbar'> 
+		<button class='btn bg-accent' ng-click='fn.toggletool("footer")'><i class="material-icons icon">settings</i></button>
+		<div class='footer-tools'>
+			<button class='btn bg-dark' ng-click='fn.settheme()'><i class="material-icons icon">palette</i></button> 
+			<button class='btn bg-black' ng-click='fn.setinvert()'><i class="material-icons icon">opacity</i></button> 
+		</div>	
+	</div>  
+	
 </footer>

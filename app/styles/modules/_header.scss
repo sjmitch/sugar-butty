@@ -26,14 +26,10 @@
 	.topbar {
 		display: flex;
 		justify-content: space-between;
-		padding: 0 20px;
+		padding: 0 10px;
 		box-shadow: 0 2px 5px rgba(0,0,0,0.26);
 		position: relative;
 		z-index: 1;
-		
-		@media screen and (max-width: $small) {
-			padding: 0 10px;
-		}
 				
 		.menu-control {
 			display: flex;
@@ -82,17 +78,34 @@
 	}
 	
 	// navbar
-	&.open .navbar {
+	&.navbaropen .navbar {
 			transform: translate3d(0px,0px,0px);
 	}
 	
 	.navbar {
 		display: flex;	
-		font-size: 200%;
+		font-size: 185%;
 		padding: 0;
 		position: absolute;
 		transform: translate3d(-100%,0px,0px);
 		transition: transform .3s ease-in;
 		overflow: auto;		
 	}
+	
+	// sidebar
+	&.sidebaropen .sidebar {
+			transform: translate3d(0px,0px,0px);
+	}
+	
+	.sidebar {
+		display: flex;	
+		font-size: 185%;
+		padding: 0;
+		position: absolute;
+		transform: translate3d(100%,0px,0px);
+		transition: transform .3s ease-in;
+		overflow: auto;	
+		right: 0;
+	}
+	
 }

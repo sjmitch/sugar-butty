@@ -20,13 +20,35 @@ angular.module('buttyApp')
 		 var win = angular.element($window);
         
 		  
-		 // MENU DISPLAY /////////////////////////////////////////////////////////
+		 // NAVBAR DISPLAY /////////////////////////////////////////////////////////
 		  
-		 scope.data.menuopen = false;
+		 scope.data.navbaropen = false;
 		  
-		 scope.menucontrol = function($event){
+		 scope.navbarcontrol = function($event){
+			 
+			  scope.data.sidebaropen = false;
+			 
+			  scope.data.navbaropen ? scope.data.navbaropen = false : scope.data.navbaropen = true ;
+			 
+			 
+			 
+			  $timeout(function() {
+            		scope.$apply();
+            	}, 0, false);
+			 
+			  $event.stopPropagation();
+		
+		  };
+		  
+		 // SIDEBAR DISPLAY /////////////////////////////////////////////////////////
+		  
+		 scope.data.sidebaropen = false;
+		  
+		 scope.sidebarcontrol = function($event){
+			 
+			  scope.data.navbaropen = false;	  
 
-			  scope.data.menuopen ? scope.data.menuopen = false : scope.data.menuopen = true ;
+			  scope.data.sidebaropen ? scope.data.sidebaropen = false : scope.data.sidebaropen = true ;
 			 
 			  $timeout(function() {
             		scope.$apply();
@@ -37,8 +59,9 @@ angular.module('buttyApp')
 		  };
 		 
 		  
-		  // add function to global 
-		  global.fn.menucontrol = scope.menucontrol;
+		  // add functions to global 
+		  global.fn.navbarcontrol = scope.navbarcontrol;
+		  global.fn.sidebarcontrol = scope.sidebarcontrol;
 
 		  console.log('LINKED header');
 

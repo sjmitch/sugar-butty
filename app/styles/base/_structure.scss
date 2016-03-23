@@ -61,7 +61,6 @@ $pad10: $fontsize;
 	font-size: 100%;
 	background: inherit;
 	position: relative;
-	font-size: 100%;
 	min-height: 100%;
 
 	.container {
@@ -93,7 +92,7 @@ $pad10: $fontsize;
 	font-size: 260%;
 	letter-spacing: .02em;
 	@media screen and (max-width: $small) {
-    	font-size: 200%;
+    	font-size: 220%;
   	}
 }
 .header-main {
