@@ -110,16 +110,27 @@ angular.module('buttyApp')
 					scope.scrollTo();
 				} 
 					scope.lastScrollTop = top;
+					// close menus
+			  		scope.data.navbaropen = false;
+			  		scope.data.sidebaropen = false;
+					scope.data.footertools = false;
+				
+					$timeout(function() {
+						scope.$apply();
+					}, 0, false);
 						 
 			};
 		  
 		  scope.scrollTo = function(){
 			  	var main = angular.element(document.querySelector('#main'));
 				var maintop = main.offset().top;
-				//var header = angular.element(document.querySelector('#header'));
 				var headerheight = angular.element(document.querySelector('#header')).prop('offsetHeight');
-
-				$('html,body').animate({scrollTop: maintop - headerheight }, "slow");
+			  	
+			  // close menus
+			  scope.data.navbaropen = false;
+			  scope.data.sidebaropen = false;
+			  
+			  $('html,body').animate({scrollTop: maintop - headerheight }, "slow");
 			  
 			  $timeout(function() {
             		scope.$apply();

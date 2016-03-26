@@ -15,7 +15,13 @@ angular.module('buttyApp')
       link: function postLink(scope, element, attrs) {
 		 
 		  scope.fn = global.fn;
-
+		  
+		  scope.footertools = function(){
+			  scope.data.footertools ? scope.data.footertools = false : scope.data.footertools = true ;
+		  };
+		  
+		  global.fn.footertools = scope.footertools;
+		  
         	console.log('LINKED footer');
 
       }

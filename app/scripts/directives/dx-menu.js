@@ -31,8 +31,8 @@ angular.module('buttyApp')
 			scope.$watch('location.path()', function () {
          		scope.setview();
         	});  
-			// toggle menu display
-			scope.data.menuopen ? scope.fn.menucontrol($event) : null;
+			// close menu
+			scope.data.navbaropen ? scope.fn.navbarcontrol($event) : '';
 			// scroll to content
 			scope.fn.scrollTo(); 
 		  });

@@ -16,15 +16,8 @@ angular.module('buttyApp')
 		  scope.name = global.name;
 		  scope.fn = global.fn;
 		  scope.data = global.data;
-		  
-		  // toggle menu
-		  element.click(function($event){
-			//  toggle menu display
-			scope.fn.menucontrol($event);
-			  
-		  });
 
-        //	console.log('LINKED logo');
+        	console.log('LINKED logo');
       }
     };
   });

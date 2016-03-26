@@ -11,7 +11,7 @@
 	color: $white;
 	width: 100%;
 	padding: $pad;
-	transition: background-color .6s;
+	transition: background-color .3s;
 
 	.toolbar {
 		display: flex;
@@ -22,9 +22,21 @@
 		margin: 0;
 		flex-direction: column;
 		
+		.control {
+			position: relative;
+			z-index: 100;
+		}
+		
 		.footer-tools {
 			display: flex;
 			flex-direction: column;
+			transform: translate3d(0px,100%,0px);
+			transition: transform .3s;
+			
+			&.open {
+				transform: translate3d(0px,0,0px);
+				height: auto;
+			}
 		}
 	}
 	

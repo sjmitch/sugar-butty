@@ -29,12 +29,14 @@
 		
 		.cardlink {
 			display: block;
-			padding: 10px 85px 10px 18px;
+			padding: 10px 85px 10px 10px;
 			box-shadow: 2px 2px 5px rgba(0,0,0,0.26);
 			text-decoration: none;
 			margin: 5% 5% 0 0;
 			position: relative;
 			text-transform: capitalize;
+			border-bottom: none;
+			transition: background .3s ease-in-out;
 			
 			&:after {
 				position: absolute;

@@ -5,11 +5,14 @@
 	</div>
 	
 	<div class='toolbar footer-toolbar'> 
-		<button class='btn bg-accent' ng-click='fn.toggletool("footer")'><i class="material-icons icon">settings</i></button>
-		<div class='footer-tools'>
+		
+		<div class='footer-tools' ng-class='{open : data.footertools}'>
 			<button class='btn bg-dark' ng-click='fn.settheme()'><i class="material-icons icon">palette</i></button> 
 			<button class='btn bg-black' ng-click='fn.setinvert()'><i class="material-icons icon">opacity</i></button> 
 		</div>	
+		
+		<button class='btn bg-accent control' ng-click='fn.footertools()'><i class="material-icons icon">settings</i></button>
+		
 	</div>  
 	
 </footer>

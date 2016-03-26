@@ -1,29 +1,29 @@
-<header id='header' class='Header bg-dark'  ng-class='{navbaropen:data.navbaropen, sidebaropen:data.sidebaropen}'>
+<header id='header' class='Header'  ng-class='{navbaropen:data.navbaropen, sidebaropen:data.sidebaropen}'>
 
 	<!-- top bar -->
 	<div class='topbar'>
 		
 		<!-- menu control -->
-		<div class="menu-control">
-			<button class="btn btn-flat btn-menu" ng-click="fn.navbarcontrol($event)"  ng-class='{animate:data.navbaropen}'><i class="material-icons">menu</i></button>
+		<div class="control">
+			<button class="btn btn-menu control-navbar" ng-click="fn.navbarcontrol($event)"  ng-class='{animate:data.navbaropen}'><i class="material-icons">menu</i></button>
 		</div> 
 		
 		<!-- logo -->
 		<div class='page-logo'>
-			<h1 class='h1'>
+			<h1 class='h1' ng-click="fn.scrolltotop($event)" >
 				<dx-logo></dx-logo>
 			</h1>
 		</div>
 		
 		<!-- dashboard control -->
-		<div class="menu-control">
-			<button class="btn btn-flat btn-menu" ng-click="fn.sidebarcontrol($event)" ng-class='{animate:data.sidebaropen}'><i class="material-icons">dashboard</i></button>
+		<div class="control">
+			<button class="btn btn-menu control-sidebar" ng-click="fn.sidebarcontrol($event)" ng-class='{animate:data.sidebaropen}'><i class="material-icons">dashboard</i></button>
 		</div> 
 		
 	</div>
 
 	<!-- nav bar -->
-	<nav class='navbar overlay' ng-style='{height: data.screenheight+ "px"}'>
+	<nav class='navbar' ng-style='{height: data.screenheight+ "px"}'>
 
 		<!-- menu -->
 		<div class='menu-wrap'>
@@ -33,7 +33,7 @@
 	</nav>
 	
 	<!-- side bar -->
-	<div class='sidebar overlay' ng-style='{height: data.screenheight+ "px"}'>
+	<div class='sidebar' ng-style='{height: data.screenheight+ "px"}'>
 
 		<div class='login'>
 			<h2>Logo-in</h2>

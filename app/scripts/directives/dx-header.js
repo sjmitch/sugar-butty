@@ -30,8 +30,6 @@ angular.module('buttyApp')
 			 
 			  scope.data.navbaropen ? scope.data.navbaropen = false : scope.data.navbaropen = true ;
 			 
-			 
-			 
 			  $timeout(function() {
             		scope.$apply();
             	}, 0, false);
@@ -57,11 +55,28 @@ angular.module('buttyApp')
 			  $event.stopPropagation();
 		
 		  };
+		  
+		  
+		  // scroll to top /////////////////////////////////////////////////////////
+		  
+		  scope.scrolltotop = function(){
+			
+			  // close menus
+			  scope.data.navbaropen = false;
+			  scope.data.sidebaropen = false;
+			  
+			  $('html,body').animate({scrollTop: 0 }, "slow");
+			  
+			  $timeout(function() {
+            		scope.$apply();
+            	}, 0, false);
+		  };
 		 
 		  
 		  // add functions to global 
 		  global.fn.navbarcontrol = scope.navbarcontrol;
 		  global.fn.sidebarcontrol = scope.sidebarcontrol;
+		  global.fn.scrolltotop = scope.scrolltotop;
 
 		  console.log('LINKED header');
 

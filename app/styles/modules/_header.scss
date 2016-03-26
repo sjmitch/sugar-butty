@@ -26,12 +26,12 @@
 	.topbar {
 		display: flex;
 		justify-content: space-between;
-		padding: 0 10px;
-		box-shadow: 0 2px 5px rgba(0,0,0,0.26);
+		padding: 0 5px;
 		position: relative;
 		z-index: 1;
+		background-color: rgba(0, 0, 0, 0.2);
 				
-		.menu-control {
+		.control {
 			display: flex;
 			align-items: center;
 			transition: all .6s;		
@@ -52,9 +52,17 @@
 			padding: 0;
 			transform: rotate(0);
 			transition: transform .3s ease-in-out;
+			background: transparent;
+			border: none;
+			outline: none;
+			box-shadow: none;
 			
-			&.animate {
+			&.control-navbar.animate {
 				transform: rotate(-90deg);
+			}
+			
+			&.control-sidebar.animate {
+				transform: rotate(90deg);
 			}
 			
 			@media screen and (max-width: $small) {
@@ -64,14 +72,12 @@
 		    
 		.page-logo {
 			.h1 {
-				font-size: 450%;
+				font-size: 350%;
 				margin-bottom: 0;
 				opacity: 1;
 				text-align: center;
+				outline: none;
 				
-				@media screen and (max-width: $small) {
-					font-size: 300%;
-				}
 			}
 		}
 				
@@ -84,7 +90,7 @@
 	
 	.navbar {
 		display: flex;	
-		font-size: 185%;
+		font-size: 160%;
 		padding: 0;
 		position: absolute;
 		transform: translate3d(-100%,0px,0px);
