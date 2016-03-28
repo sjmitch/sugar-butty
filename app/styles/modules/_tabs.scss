@@ -1,0 +1,63 @@
+/*
+ * MODULES/TABS scss stylesheet
+ * stephen@sugarbutty.com
+ * created March 2016
+ */
+
+
+/* TABS styles 
+   ========================================================================== */
+
+
+.tabs {
+	display: flex;
+	flex-direction: column;
+    padding: 1em 1em 3em 0;
+    justify-content: flex-start;
+    position: relative;
+	overflow: hidden;
+	
+	@media screen and (orientation: landscape) {
+		margin: auto;
+
+	}
+	
+	.tab {	
+		display: block;
+		line-height: 200%;
+    	width: 100%;
+		
+		.tablink {
+			display: block;
+			padding: 10px 85px 10px 14px;
+			box-shadow: 2px 2px 5px rgba(0,0,0,0.26);
+			text-decoration: none;
+			margin: 5% 5% 0 0;
+			position: relative;
+			text-transform: capitalize;
+			border-bottom: none;
+			transition: background .3s ease-in-out;
+			
+			&:after {
+				position: absolute;
+				font-size: 2em;
+				opacity: .5;
+				line-height: 1;
+				right: 8%;
+				top: 17%;
+				@extend .material-icons;
+        		content: 'fiber_manual_record';
+			}
+			
+			&.active:after {
+				opacity: 1;
+        		content: 'fiber_smart_record';
+				right: 5%;
+			}
+			
+			&.active:hover {
+				cursor: pointer;
+			}
+		}
+	}
+}
