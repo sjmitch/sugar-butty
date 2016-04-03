@@ -13,6 +13,7 @@
 	top: 0;
 	transition: all .6s;
 	width: 100%;
+	font-size: 300%;
 	
 	.hero-media {
 		background-image: url('/images/banner.png');
@@ -24,6 +25,7 @@
 		width: 100%;
 		position: absolute;
 		top: 0;
+		//-webkit-filter: blur(3px);
 	}
 	
 	.hero-content {
@@ -37,6 +39,25 @@
 		position: relative;
 		top: 0;
 		padding: 10%;
+		
+		.btn {
+			border-radius: 10px;
+			padding: 20px;
+    		display: flex;
+    		flex-direction: column;
+			align-items: center;
+			text-align: left;
+			max-width: 7em;
+			box-shadow: none;
+			
+			.icon {
+				font-size: 3em;
+			}
+			
+			.code {
+				margin-bottom: 5px;
+			}
+		}
 	}
 
 }
