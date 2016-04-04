@@ -23,17 +23,17 @@
 	</div>
 
 	<!-- nav bar -->
-	<nav class='navbar' ng-style='{height: data.screenheight+ "px"}'>
+	<nav class='navbar bg-dark' ng-style='{height: data.screenheight+ "px"}' ng-swipe-left='fn.navbarcontrol($event)' >
 
-		<!-- menu -->
-		<div class='menu-wrap'>
+		<!-- tabs -->
+		<div class='tabs'>
 			<dx-menu></dx-menu>
 		</div>
 		
 	</nav>
 	
 	<!-- side bar -->
-	<div class='sidebar' ng-style='{height: data.screenheight+ "px"}'>
+	<div class='sidebar bg-black' ng-style='{height: data.screenheight+ "px"}' ng-swipe-right='fn.sidebarcontrol($event)'>
 
 		<div class='login'>
 			<h2>Logo-in</h2>

@@ -34,7 +34,7 @@
 		.control {
 			display: flex;
 			align-items: center;
-			transition: all .6s;		
+			transition: all .3s;		
 		}		
 		
 		.menu {
@@ -94,8 +94,9 @@
 		padding: 0;
 		position: absolute;
 		transform: translate3d(-100%,0px,0px);
-		transition: transform .3s ease-in;
-		overflow: auto;		
+		transition: transform .3s ease-in-out;
+		overflow: auto;
+		width: 100%;
 	}
 	
 	// sidebar
@@ -109,9 +110,10 @@
 		padding: 0;
 		position: absolute;
 		transform: translate3d(100%,0px,0px);
-		transition: transform .3s ease-in;
+		transition: transform .3s ease-in-out;
 		overflow: auto;	
 		right: 0;
+		width: 100%;
 	}
 	
 }

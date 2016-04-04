@@ -12,15 +12,11 @@
 .tabs {
 	display: flex;
 	flex-direction: column;
-    padding: 1em 1em 3em 0;
+    padding: 1em 0 3em;
     justify-content: flex-start;
     position: relative;
 	overflow: hidden;
-	
-	@media screen and (orientation: landscape) {
-		margin: auto;
-
-	}
+	width: 100%;
 	
 	.tab {	
 		display: block;
@@ -43,8 +39,8 @@
 				font-size: 2em;
 				opacity: .5;
 				line-height: 1;
-				right: 8%;
-				top: 17%;
+				right: 10px;
+				top: 10px;
 				@extend .material-icons;
         		content: 'fiber_manual_record';
 			}
@@ -52,7 +48,7 @@
 			&.active:after {
 				opacity: 1;
         		content: 'fiber_smart_record';
-				right: 5%;
+				right: 7px;
 			}
 			
 			&.active:hover {

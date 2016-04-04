@@ -9,22 +9,41 @@
 
 .page-footer {
 	color: $white;
+	background-color: $black;
 	width: 100%;
 	padding: $pad;
 	transition: background-color .3s;
+	
+	.copyright {
+		padding: 20px;
+	}
+	
+	.navigate {
+		display: flex;
+		justify-content: center;
+	}
 
 	.toolbar {
 		display: flex;
 		justify-content: space-between;
 		position: fixed;
 		bottom: 0;
-		right: 0;
 		margin: 0;
 		flex-direction: column;
+		z-index: 10;
+		width: 44px;
+		
+		&.footer-toolbar {
+			right: 0;
+		}
+		
+		&.footer-sharebar {
+			left: 0;
+		}
 		
 		.control {
-			position: relative;
-			z-index: 100;
+				position: relative;
+				height: 100%;
 		}
 		
 		.footer-tools {
@@ -40,7 +59,20 @@
 		}
 	}
 	
+	.btn {
+		box-shadow: none;
+	}
+	
+	.btn-share {
+		border: none;
+		height: 44px;
+		
+		img {
+			width: 100%;
+		}
+	}
+	
 	.icon {
-		font-size: 35px;
+		font-size: 36px;
 	}
 }

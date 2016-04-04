@@ -86,10 +86,12 @@ $modify: 20deg;
 .bg-black {background-color: $black;}
 .bg-black-light {background-color: lighten($black, $modify);}
 .bg-black-dark {background-color: darken($black, $modify);}
+.txt-black {color: $black}
 /* white */
 .bg-white {background-color: $white;}
 .bg-white-light {background-color: lighten($white, $modify);}
 .bg-white-dark {background-color: darken($white, $modify);}
+.txt-white {color: $white}
 
 .theme-red {
 	$color: $red;

@@ -50,6 +50,7 @@
 .flex {
   display: flex;  
 }
+
 .flex-inline {
   display: inline-flex;
 }
@@ -58,12 +59,15 @@
 .flex-row {
 	flex-direction: row;
 }
+
 .flex-row_reverse {
 	flex-direction: row-reverse;
 }
+
 .flex-column {
 	flex-direction: column;
 }
+
 .flex-column_reverse {
 	flex-direction: column-reverse;
 }
@@ -72,9 +76,11 @@
 .flex-wrap {
     flex-wrap: wrap;
 }
+
 .flex-nowrap {
 	flex-wrap: nowrap;
 }
+
 .flex-wrap_reverse {
 	flex-wrap: wrap-reverse;
 }

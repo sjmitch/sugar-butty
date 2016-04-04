@@ -20,7 +20,12 @@ angular.module('buttyApp')
 			  scope.data.footertools ? scope.data.footertools = false : scope.data.footertools = true ;
 		  };
 		  
+		  scope.sharebartools = function(){
+			  scope.data.sharebartools ? scope.data.sharebartools = false : scope.data.sharebartools = true ;
+		  };
+		  
 		  global.fn.footertools = scope.footertools;
+		  global.fn.sharebartools = scope.sharebartools;
 		  
         	console.log('LINKED footer');
 

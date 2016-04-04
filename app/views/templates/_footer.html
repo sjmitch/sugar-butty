@@ -1,18 +1,38 @@
 <footer class='footer page-footer'>
 	
-	<div class='footer-content bg-black'>
+	<div class='footer-content'>
 		<dx-menu></dx-menu>
+		<div class='copyright'>
+			<p>Copyright ©2016 sugarbutty.com</p>
+		</div>
 	</div>
 	
 	<div class='toolbar footer-toolbar'> 
 		
 		<div class='footer-tools' ng-class='{open : data.footertools}'>
-			<button class='btn bg-dark' ng-click='fn.settheme()'><i class="material-icons icon">palette</i></button> 
-			<button class='btn bg-black' ng-click='fn.setinvert()'><i class="material-icons icon">opacity</i></button> 
+			<button class='btn bg txt-accent' ng-click='fn.settheme()'><i class="material-icons icon">palette</i></button> 
+			<button class='btn bg-white txt-black' ng-click='fn.setinvert()'><i class="material-icons icon">opacity</i></button> 
 		</div>	
 		
-		<button class='btn bg-accent control' ng-click='fn.footertools()'><i class="material-icons icon">settings</i></button>
+		<button class='btn bg-black control' ng-click='fn.footertools()'><i class="material-icons icon">settings</i></button>
 		
-	</div>  
+	</div>
+	
+	<div class='toolbar footer-sharebar'> 
+		
+		<div class='footer-tools' ng-class='{open : data.sharebartools}'>
+			<a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fsugarbutty.com&t=" title="Share on Facebook" target="_blank" class='btn-share'><img src="images/facebook.png"></a> 
+			<a href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fsugarbutty.com&title=&summary=&source=http%3A%2F%2Fsugarbutty.com" target="_blank" title="Share on LinkedIn" class='btn-share'><img src="images/linkedin.png"></a>
+			<a href="https://twitter.com/intent/tweet?source=http%3A%2F%2Fsugarbutty.com&text=:%20http%3A%2F%2Fsugarbutty.com" target="_blank" title="Tweet" class='btn-share'><img src="images/twitter.png"></a>
+		</div>	
+		
+		<button class='btn bg-black control' ng-click='fn.sharebartools()'><i class="material-icons icon">share</i></button>
+		
+	</div>
+	
+	<!-- navigate -->
+		<div class="navigate">
+			<button class="btn btn-menu bg-black control-navbar" ng-click="fn.scrolltotop($event)"   ng-class='{animate:data.navbaropen}'><i class="material-icons icon">publish</i></button>
+		</div> 
 	
 </footer>

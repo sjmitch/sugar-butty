@@ -87,13 +87,15 @@ $modify: 10deg;
 .bg-bluegrey-light {background-color: lighten($bluegrey, $modify);}
 .bg-bluegrey-dark {background-color: darken($bluegrey, $modify);}
 /* black */
-.bg-black {background-color: $black;color: $white;}
+.bg-black {background-color: $black; color: $white;}
 .bg-black-light {background-color: lighten($black, $modify);color: $white;}
 .bg-black-dark {background-color: darken($black, $modify);color: $white;}
+.txt-black {color: $black;}
 /* white */
-.bg-white {background-color: $white;}
+.bg-white {background-color: $white; color: $black;}
 .bg-white-light {background-color: lighten($white, $modify);}
 .bg-white-dark {background-color: darken($white, $modify);}
+.txt-white {color: $white;}
 
 .theme-red {
 	$color: $red;
@@ -361,8 +363,8 @@ $modify: 10deg;
  	}
 }
 
-.bg, .bg-accent, .bg-accent a {
-	color: $white !important;
+.bg, .bg-accent {
+	color: $white;
 }
 
 
