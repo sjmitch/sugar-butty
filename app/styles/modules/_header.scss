@@ -96,6 +96,7 @@
 		transition: transform .3s ease-in-out;
 		overflow: auto;
 		width: 100%;
+		max-width: $small;
 	}
 	
 	// sidebar
