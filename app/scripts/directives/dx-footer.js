@@ -22,6 +22,7 @@ angular.module('buttyApp')
 		  
 		  scope.sharebartools = function(){
 			  scope.data.sharebartools ? scope.data.sharebartools = false : scope.data.sharebartools = true ;
+			  global.data.navbaropen = false
 		  };
 		  
 		  global.fn.footertools = scope.footertools;

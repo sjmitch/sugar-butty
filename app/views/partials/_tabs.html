@@ -1,8 +1,8 @@
-<ul class='cards'>
-	<li class='card'>
-		<a ng-href='#/' class='cardlink bg-accent' ng-class='{active : data.view === "/" }'>Home</a>
+<ul class='tabs'>
+	<li class='tab'>
+		<a ng-href='#/' class='tablink bg-accent' ng-class='{active : data.view === "/" }'>Home</a>
 	</li>
-	<li class='card' ng-repeat="item in data.menu">
-		<a ng-href='#/{{item}}' class='cardlink bg-accent' ng-class='{active : data.view === "/{{item}}" }'>{{item}}</a>
+	<li class='tab' ng-repeat="item in data.menu">
+		<a ng-href='#/{{item}}' class='tablink bg-accent' ng-class='{active : data.view === "/{{item}}" }'>{{item}}</a>
 	</li>
 </ul>

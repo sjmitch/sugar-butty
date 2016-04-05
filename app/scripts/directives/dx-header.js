@@ -30,6 +30,8 @@ angular.module('buttyApp')
 			 
 			  scope.data.navbaropen ? scope.data.navbaropen = false : scope.data.navbaropen = true ;
 			 
+			 global.data.sharebartools = false 
+			 
 			  $timeout(function() {
             		scope.$apply();
             	}, 0, false);

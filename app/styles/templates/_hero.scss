@@ -25,7 +25,7 @@
 		width: 100%;
 		position: absolute;
 		top: 0;
-		//-webkit-filter: blur(3px);
+		-webkit-filter: blur(5px);
 	}
 	
 	.hero-content {
@@ -38,7 +38,7 @@
 		width: 100%;
 		position: relative;
 		top: 0;
-		padding: 10%;
+		padding: 0;
 		
 		.btn {
 			border-radius: 10px;
@@ -49,13 +49,21 @@
 			text-align: left;
 			max-width: 7em;
 			box-shadow: none;
+			background-color: transparent;
 			
 			.icon {
-				font-size: 3em;
+				font-size: 4em;
+    			border: 2px solid;
+    			text-shadow: 2px 2px #000;
+    			border-radius: 4px;
 			}
 			
 			.code {
-				margin-bottom: 5px;
+				margin-bottom: 20px;
+    			opacity: .8;
+    			text-shadow: 4px 4px #000;
+				font-size: 2em;
+				text-align: center;
 			}
 		}
 	}
